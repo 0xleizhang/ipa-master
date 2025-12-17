@@ -1,0 +1,7 @@
+{
+  "name": "IPA Master - AI Pronunciation Coach",
+  "description": "A comprehensive IPA learning tool with video integration, examples, and AI-powered pronunciation assessment.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
