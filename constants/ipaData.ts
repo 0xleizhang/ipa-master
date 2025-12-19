@@ -5,34 +5,9 @@ import { IPASymbol } from '../types';
 const SHARED_VIDEO_ID = 'Sw36F_UcIn8';
 
 export const IPA_DATA: IPASymbol[] = [
-  // ==================== VOWELS (20) ====================
-  // Note: All vowels are technically voiced.
-  
-  // --- Monophthongs (Long) ---
+  // ==================== VOWELS (12) ====================
   {
-    symbol: 'i:',
-    ph: 'iː',
-    filename: 'i-long',
-    name: 'Long i',
-    section: 'Vowels',
-    category: 'Monophthongs (Long)',
-    voicing: 'Voiced',
-    exampleWord: 'sheep',
-    sound: 'eee',
-    description: 'Long sound like in "see". Smile wide.',
-    chineseTip: '【像拼音 i】但更长更紧绷。嘴角用力向两边拉开，像在微笑。符号中的冒号 (:) 代表长音。',
-    commonSpellings: ['ee', 'ea', 'ie', 'e', 'ey'],
-    examples: [
-      { word: 'sheep', transcription: '/ʃiːp/' },
-      { word: 'eat', transcription: '/iːt/' },
-      { word: 'see', transcription: '/siː/' }
-    ],
-    sentence: 'The sheep falls asleep.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-  {
-    symbol: 'ɑ:',
+    symbol: 'ɑː',
     ph: 'ɑː',
     filename: 'a-long',
     name: 'Long a',
@@ -54,7 +29,7 @@ export const IPA_DATA: IPASymbol[] = [
     videoStartTime: 0
   },
   {
-    symbol: 'ɔ:',
+    symbol: 'ɔː',
     ph: 'ɔː',
     filename: 'c-long',
     name: 'Long o',
@@ -76,29 +51,7 @@ export const IPA_DATA: IPASymbol[] = [
     videoStartTime: 0
   },
   {
-    symbol: 'u:',
-    ph: 'uː',
-    filename: 'u-long',
-    name: 'Long u',
-    section: 'Vowels',
-    category: 'Monophthongs (Long)',
-    voicing: 'Voiced',
-    exampleWord: 'blue',
-    sound: 'ooo',
-    description: 'Long "oo" sound. Lips very rounded.',
-    chineseTip: '【像拼音 u】双唇收缩成一个小圆孔，肌肉紧张，发长音“乌”。',
-    commonSpellings: ['oo', 'ue', 'ew', 'u', 'o'],
-    examples: [
-      { word: 'blue', transcription: '/bluː/' },
-      { word: 'food', transcription: '/fuːd/' },
-      { word: 'shoe', transcription: '/ʃuː/' }
-    ],
-    sentence: 'The moon is blue tonight.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-  {
-    symbol: 'ɜ:',
+    symbol: 'ɜː',
     ph: 'ɜː',
     filename: 'er-long',
     name: 'Long er',
@@ -120,73 +73,47 @@ export const IPA_DATA: IPASymbol[] = [
     youtubeId: SHARED_VIDEO_ID,
     videoStartTime: 0
   },
-
-  // --- Monophthongs (Short) ---
   {
-    symbol: 'ɪ',
-    ph: 'ɪ',
-    filename: 'i-short',
-    name: 'Short i',
+    symbol: 'iː',
+    ph: 'iː',
+    filename: 'i-long',
+    name: 'Long i',
     section: 'Vowels',
-    category: 'Monophthongs (Short)',
+    category: 'Monophthongs (Long)',
     voicing: 'Voiced',
-    isDifficult: true,
-    exampleWord: 'sit',
-    sound: 'ih',
-    description: 'Short and relaxed. Like "i" in "sit".',
-    chineseTip: '【易错】不是拼音 i！发音松弛、急促，介于“一”和“耶”之间。腹部用力。符号像罗马数字 I。',
-    commonSpellings: ['i', 'y', 'ui', 'e'],
+    exampleWord: 'sheep',
+    sound: 'eee',
+    description: 'Long sound like in "see". Smile wide.',
+    chineseTip: '【像拼音 i】但更长更紧绷。嘴角用力向两边拉开，像在微笑。符号中的冒号 (:) 代表长音。',
+    commonSpellings: ['ee', 'ea', 'ie', 'e', 'ey'],
     examples: [
-      { word: 'sit', transcription: '/sɪt/' },
-      { word: 'pig', transcription: '/pɪg/' },
-      { word: 'fish', transcription: '/fɪʃ/' }
+      { word: 'sheep', transcription: '/ʃiːp/' },
+      { word: 'eat', transcription: '/iːt/' },
+      { word: 'see', transcription: '/siː/' }
     ],
-    sentence: 'The big pig sits in the pit.',
+    sentence: 'The sheep falls asleep.',
     youtubeId: SHARED_VIDEO_ID,
     videoStartTime: 0
   },
   {
-    symbol: 'e',
-    ph: 'ɛ',
-    filename: 'e',
-    name: 'Short e',
+    symbol: 'uː',
+    ph: 'uː',
+    filename: 'u-long',
+    name: 'Long u',
     section: 'Vowels',
-    category: 'Monophthongs (Short)',
+    category: 'Monophthongs (Long)',
     voicing: 'Voiced',
-    exampleWord: 'bed',
-    sound: 'eh',
-    description: 'Open mouth slightly more than /ɪ/.',
-    chineseTip: '【像汉字“耶”】但去掉了尾音。嘴角微咧，上下齿间可容纳一指。',
-    commonSpellings: ['e', 'ea'],
+    exampleWord: 'blue',
+    sound: 'ooo',
+    description: 'Long "oo" sound. Lips very rounded.',
+    chineseTip: '【像拼音 u】双唇收缩成一个小圆孔，肌肉紧张，发长音“乌”。',
+    commonSpellings: ['oo', 'ue', 'ew', 'u', 'o'],
     examples: [
-      { word: 'bed', transcription: '/bed/' },
-      { word: 'pen', transcription: '/pen/' },
-      { word: 'egg', transcription: '/eg/' }
+      { word: 'blue', transcription: '/bluː/' },
+      { word: 'food', transcription: '/fuːd/' },
+      { word: 'shoe', transcription: '/ʃuː/' }
     ],
-    sentence: 'Ted fed the red hen.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-  {
-    symbol: 'æ',
-    ph: 'æ',
-    filename: 'ae',
-    name: 'Short a',
-    section: 'Vowels',
-    category: 'Monophthongs (Short)',
-    voicing: 'Voiced',
-    isDifficult: true,
-    exampleWord: 'cat',
-    sound: 'aa',
-    description: 'Jaw drops down, tongue flat. "Trap" vowel.',
-    chineseTip: '【梅花音】中文无此音。嘴巴张大成方形，像发“阿”的嘴型，但发“哎”的音。符号是 a 和 e 的合体。',
-    commonSpellings: ['a'],
-    examples: [
-      { word: 'cat', transcription: '/kæt/' },
-      { word: 'apple', transcription: '/ˈæpl/' },
-      { word: 'map', transcription: '/mæp/' }
-    ],
-    sentence: 'The fat cat sat on a mat.',
+    sentence: 'The moon is blue tonight.',
     youtubeId: SHARED_VIDEO_ID,
     videoStartTime: 0
   },
@@ -235,6 +162,51 @@ export const IPA_DATA: IPASymbol[] = [
     videoStartTime: 0
   },
   {
+    symbol: 'ə',
+    ph: 'ə',
+    filename: 'schwa',
+    name: 'Schwa',
+    section: 'Vowels',
+    category: 'Monophthongs (Short)',
+    voicing: 'Voiced',
+    exampleWord: 'sofa',
+    sound: 'uh',
+    description: 'The most common sound. Very weak, unstressed.',
+    chineseTip: '【中央元音】英语中最常见的音。嘴唇微张，完全放松，极其模糊短促地发“额”。',
+    commonSpellings: ['a', 'e', 'i', 'o', 'u'],
+    examples: [
+      { word: 'about', transcription: '/əˈbaʊt/' },
+      { word: 'banana', transcription: '/bəˈnɑːnə/' },
+      { word: 'teacher', transcription: '/ˈtiːtʃə/' }
+    ],
+    sentence: 'A banana for breakfast.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+  {
+    symbol: 'ɪ',
+    ph: 'ɪ',
+    filename: 'i-short',
+    name: 'Short i',
+    section: 'Vowels',
+    category: 'Monophthongs (Short)',
+    voicing: 'Voiced',
+    isDifficult: true,
+    exampleWord: 'sit',
+    sound: 'ih',
+    description: 'Short and relaxed. Like "i" in "sit".',
+    chineseTip: '【易错】不是拼音 i！发音松弛、急促，介于“一”和“耶”之间。腹部用力。符号像罗马数字 I。',
+    commonSpellings: ['i', 'y', 'ui', 'e'],
+    examples: [
+      { word: 'sit', transcription: '/sɪt/' },
+      { word: 'pig', transcription: '/pɪg/' },
+      { word: 'fish', transcription: '/fɪʃ/' }
+    ],
+    sentence: 'The big pig sits in the pit.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+  {
     symbol: 'ʊ',
     ph: 'ʊ',
     filename: 'u-short',
@@ -257,29 +229,52 @@ export const IPA_DATA: IPASymbol[] = [
     videoStartTime: 0
   },
   {
-    symbol: 'ə',
-    ph: 'ə',
-    filename: 'schwa',
-    name: 'Schwa',
+    symbol: 'e',
+    ph: 'e',
+    filename: 'e',
+    name: 'Short e',
     section: 'Vowels',
     category: 'Monophthongs (Short)',
     voicing: 'Voiced',
-    exampleWord: 'sofa',
-    sound: 'uh',
-    description: 'The most common sound. Very weak, unstressed.',
-    chineseTip: '【中央元音】英语中最常见的音。嘴唇微张，完全放松，极其模糊短促地发“额”。',
-    commonSpellings: ['a', 'e', 'i', 'o', 'u'],
+    exampleWord: 'bed',
+    sound: 'eh',
+    description: 'Open mouth slightly more than /ɪ/.',
+    chineseTip: '【像汉字“耶”】但去掉了尾音。嘴角微咧，上下齿间可容纳一指。',
+    commonSpellings: ['e', 'ea'],
     examples: [
-      { word: 'about', transcription: '/əˈbaʊt/' },
-      { word: 'banana', transcription: '/bəˈnɑːnə/' },
-      { word: 'teacher', transcription: '/ˈtiːtʃə/' }
+      { word: 'bed', transcription: '/bed/' },
+      { word: 'pen', transcription: '/pen/' },
+      { word: 'egg', transcription: '/eg/' }
     ],
-    sentence: 'A banana for breakfast.',
+    sentence: 'Ted fed the red hen.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+  {
+    symbol: 'æ',
+    ph: 'æ',
+    filename: 'ae',
+    name: 'Short a',
+    section: 'Vowels',
+    category: 'Monophthongs (Short)',
+    voicing: 'Voiced',
+    isDifficult: true,
+    exampleWord: 'cat',
+    sound: 'aa',
+    description: 'Jaw drops down, tongue flat. "Trap" vowel.',
+    chineseTip: '【梅花音】中文无此音。嘴巴张大成方形，像发“阿”的嘴型，但发“哎”的音。符号是 a 和 e 的合体。',
+    commonSpellings: ['a'],
+    examples: [
+      { word: 'cat', transcription: '/kæt/' },
+      { word: 'apple', transcription: '/ˈæpl/' },
+      { word: 'map', transcription: '/mæp/' }
+    ],
+    sentence: 'The fat cat sat on a mat.',
     youtubeId: SHARED_VIDEO_ID,
     videoStartTime: 0
   },
 
-  // --- Diphthongs ---
+  // ==================== DIPHTHONGS (8) ====================
   {
     symbol: 'eɪ',
     ph: 'eɪ',
@@ -347,28 +342,6 @@ export const IPA_DATA: IPASymbol[] = [
     videoStartTime: 0
   },
   {
-    symbol: 'əʊ',
-    ph: 'əʊ',
-    filename: 'ou',
-    name: 'ou',
-    section: 'Diphthongs',
-    category: 'Diphthongs',
-    voicing: 'Voiced',
-    exampleWord: 'go',
-    sound: 'oh',
-    description: 'Glide from /ə/ to /ʊ/.',
-    chineseTip: '【字母O的发音】由“额”滑向“乌”，嘴唇最后要收圆。',
-    commonSpellings: ['o', 'ow', 'oa', 'oe'],
-    examples: [
-      { word: 'go', transcription: '/gəʊ/' },
-      { word: 'nose', transcription: '/nəʊz/' },
-      { word: 'boat', transcription: '/bəʊt/' }
-    ],
-    sentence: 'Go home on the boat.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-  {
     symbol: 'aʊ',
     ph: 'aʊ',
     filename: 'au',
@@ -387,6 +360,28 @@ export const IPA_DATA: IPASymbol[] = [
       { word: 'mouse', transcription: '/maʊs/' }
     ],
     sentence: 'The cow is out of the house.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+  {
+    symbol: 'əʊ',
+    ph: 'əʊ',
+    filename: 'ou',
+    name: 'ou',
+    section: 'Diphthongs',
+    category: 'Diphthongs',
+    voicing: 'Voiced',
+    exampleWord: 'go',
+    sound: 'oh',
+    description: 'Glide from /ə/ to /ʊ/.',
+    chineseTip: '【字母O的发音】由“额”滑向“乌”，嘴唇最后要收圆。',
+    commonSpellings: ['o', 'ow', 'oa', 'oe'],
+    examples: [
+      { word: 'go', transcription: '/gəʊ/' },
+      { word: 'nose', transcription: '/nəʊz/' },
+      { word: 'boat', transcription: '/bəʊt/' }
+    ],
+    sentence: 'Go home on the boat.',
     youtubeId: SHARED_VIDEO_ID,
     videoStartTime: 0
   },
@@ -457,9 +452,7 @@ export const IPA_DATA: IPASymbol[] = [
     videoStartTime: 0
   },
 
-  // ==================== CONSONANTS (28) ====================
-
-  // --- Plosives ---
+  // ==================== UNVOICED CONSONANTS (10) ====================
   {
     symbol: 'p',
     ph: 'p',
@@ -479,28 +472,6 @@ export const IPA_DATA: IPASymbol[] = [
       { word: 'cup', transcription: '/kʌp/' }
     ],
     sentence: 'Please pay for the pot.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-  {
-    symbol: 'b',
-    ph: 'b',
-    filename: 'b',
-    name: 'b',
-    section: 'Consonants',
-    category: 'Plosives',
-    voicing: 'Voiced',
-    exampleWord: 'bat',
-    sound: 'buh',
-    description: 'Voiced bilabial plosive.',
-    chineseTip: '【像拼音 b】双唇紧闭爆破，但要振动声带。助记：像竖起大拇指点赞 (b -> best)。',
-    commonSpellings: ['b', 'bb'],
-    examples: [
-      { word: 'bag', transcription: '/bæg/' },
-      { word: 'bed', transcription: '/bed/' },
-      { word: 'ball', transcription: '/bɔːl/' }
-    ],
-    sentence: 'The big baby sleeps.',
     youtubeId: SHARED_VIDEO_ID,
     videoStartTime: 0
   },
@@ -527,28 +498,6 @@ export const IPA_DATA: IPASymbol[] = [
     videoStartTime: 0
   },
   {
-    symbol: 'd',
-    ph: 'd',
-    filename: 'd',
-    name: 'd',
-    section: 'Consonants',
-    category: 'Plosives',
-    voicing: 'Voiced',
-    exampleWord: 'dog',
-    sound: 'duh',
-    description: 'Voiced alveolar plosive.',
-    chineseTip: '【像拼音 d】舌尖抵住上齿龈爆破。浊辅音。',
-    commonSpellings: ['d', 'dd', 'ed'],
-    examples: [
-      { word: 'dog', transcription: '/dɒg/' },
-      { word: 'dad', transcription: '/dæd/' },
-      { word: 'bed', transcription: '/bed/' }
-    ],
-    sentence: 'Dad dances daily.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-  {
     symbol: 'k',
     ph: 'k',
     filename: 'k',
@@ -570,30 +519,6 @@ export const IPA_DATA: IPASymbol[] = [
     youtubeId: SHARED_VIDEO_ID,
     videoStartTime: 0
   },
-  {
-    symbol: 'g',
-    ph: 'g',
-    filename: 'g',
-    name: 'g',
-    section: 'Consonants',
-    category: 'Plosives',
-    voicing: 'Voiced',
-    exampleWord: 'go',
-    sound: 'guh',
-    description: 'Voiced velar plosive.',
-    chineseTip: '【像拼音 g】舌后部抵住软腭。浊辅音。',
-    commonSpellings: ['g', 'gg', 'gh'],
-    examples: [
-      { word: 'go', transcription: '/gəʊ/' },
-      { word: 'get', transcription: '/get/' },
-      { word: 'bag', transcription: '/bæg/' }
-    ],
-    sentence: 'Go get the game.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-
-  // --- Fricatives ---
   {
     symbol: 'f',
     ph: 'f',
@@ -617,29 +542,6 @@ export const IPA_DATA: IPASymbol[] = [
     videoStartTime: 0
   },
   {
-    symbol: 'v',
-    ph: 'v',
-    filename: 'v',
-    name: 'v',
-    section: 'Consonants',
-    category: 'Fricatives',
-    voicing: 'Voiced',
-    isDifficult: true,
-    exampleWord: 'van',
-    sound: 'vvv',
-    description: 'Voiced labiodental fricative.',
-    chineseTip: '【易错】上齿咬下唇发音，像 f 但要振动声带。不要发成 w (我)！',
-    commonSpellings: ['v', 'f'],
-    examples: [
-      { word: 'van', transcription: '/væn/' },
-      { word: 'very', transcription: '/ˈveri/' },
-      { word: 'five', transcription: '/faɪv/' }
-    ],
-    sentence: 'Very vivid violet van.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-  {
     symbol: 's',
     ph: 's',
     filename: 's',
@@ -658,28 +560,6 @@ export const IPA_DATA: IPASymbol[] = [
       { word: 'bus', transcription: '/bʌs/' }
     ],
     sentence: 'Six snakes sell snacks.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-  {
-    symbol: 'z',
-    ph: 'z',
-    filename: 'z',
-    name: 'z',
-    section: 'Consonants',
-    category: 'Fricatives',
-    voicing: 'Voiced',
-    exampleWord: 'zoo',
-    sound: 'zzz',
-    description: 'Voiced alveolar fricative.',
-    chineseTip: '【像拼音 z】蜜蜂飞行的声音“嗡”。浊辅音。',
-    commonSpellings: ['z', 'zz', 's'],
-    examples: [
-      { word: 'zoo', transcription: '/zuː/' },
-      { word: 'zebra', transcription: '/ˈzebrə/' },
-      { word: 'nose', transcription: '/nəʊz/' }
-    ],
-    sentence: 'Zebras zigzag in the zoo.',
     youtubeId: SHARED_VIDEO_ID,
     videoStartTime: 0
   },
@@ -707,6 +587,207 @@ export const IPA_DATA: IPASymbol[] = [
     videoStartTime: 0
   },
   {
+    symbol: 'ʃ',
+    ph: 'ʃ',
+    filename: 'sh',
+    name: 'esh',
+    section: 'Consonants',
+    category: 'Fricatives',
+    voicing: 'Voiceless',
+    exampleWord: 'she',
+    sound: 'shh',
+    description: 'Voiceless postalveolar fricative.',
+    chineseTip: '【卷舌音】让别人安静时发的“嘘”。符号像拉长的 S (Silence)。',
+    commonSpellings: ['sh', 'ch', 'ti', 'ss', 'ci'],
+    examples: [
+      { word: 'she', transcription: '/ʃiː/' },
+      { word: 'shop', transcription: '/ʃɒp/' },
+      { word: 'fish', transcription: '/fɪʃ/' }
+    ],
+    sentence: 'She sells sea shells.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+  {
+    symbol: 'tʃ',
+    ph: 'tʃ',
+    filename: 'ch',
+    name: 'ch',
+    section: 'Consonants',
+    category: 'Affricates',
+    voicing: 'Voiceless',
+    exampleWord: 'chair',
+    sound: 'ch',
+    description: 'Voiceless postalveolar affricate.',
+    chineseTip: '【像汉字“吃”】但双唇要收圆向前翘起。清辅音。',
+    commonSpellings: ['ch', 'tch', 't'],
+    examples: [
+      { word: 'chair', transcription: '/tʃeə/' },
+      { word: 'cheese', transcription: '/tʃiːz/' },
+      { word: 'watch', transcription: '/wɒtʃ/' }
+    ],
+    sentence: 'Check the watch.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+  {
+    symbol: 'tr',
+    ph: 'tr',
+    filename: 'tr',
+    name: 'tr',
+    section: 'Consonants',
+    category: 'Affricates',
+    voicing: 'Voiceless',
+    exampleWord: 'tree',
+    sound: 'truh',
+    description: 'Voiceless retroflex affricate sound.',
+    chineseTip: '【像汉字“戳”】双唇收圆，舌尖抵住上齿龈后部再放开。',
+    commonSpellings: ['tr'],
+    examples: [
+      { word: 'tree', transcription: '/triː/' },
+      { word: 'try', transcription: '/traɪ/' },
+      { word: 'train', transcription: '/treɪn/' }
+    ],
+    sentence: 'Try to train for the trip.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+  {
+    symbol: 'ts',
+    ph: 'ts',
+    filename: 'ts',
+    name: 'ts',
+    section: 'Consonants',
+    category: 'Affricates',
+    voicing: 'Voiceless',
+    exampleWord: 'cats',
+    sound: 'ts',
+    description: 'Voiceless alveolar affricate.',
+    chineseTip: '【像汉字“次”】舌尖抵住上齿龈，气流爆破摩擦而出。',
+    commonSpellings: ['ts'],
+    examples: [
+      { word: 'cats', transcription: '/kæts/' },
+      { word: 'hats', transcription: '/hæts/' },
+      { word: 'let\'s', transcription: '/lets/' }
+    ],
+    sentence: 'The cats need hats.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+
+  // ==================== VOICED CONSONANTS (10) ====================
+  {
+    symbol: 'b',
+    ph: 'b',
+    filename: 'b',
+    name: 'b',
+    section: 'Consonants',
+    category: 'Plosives',
+    voicing: 'Voiced',
+    exampleWord: 'bat',
+    sound: 'buh',
+    description: 'Voiced bilabial plosive.',
+    chineseTip: '【像拼音 b】双唇紧闭爆破，但要振动声带。助记：像竖起大拇指点赞 (b -> best)。',
+    commonSpellings: ['b', 'bb'],
+    examples: [
+      { word: 'bag', transcription: '/bæg/' },
+      { word: 'bed', transcription: '/bed/' },
+      { word: 'ball', transcription: '/bɔːl/' }
+    ],
+    sentence: 'The big baby sleeps.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+  {
+    symbol: 'd',
+    ph: 'd',
+    filename: 'd',
+    name: 'd',
+    section: 'Consonants',
+    category: 'Plosives',
+    voicing: 'Voiced',
+    exampleWord: 'dog',
+    sound: 'duh',
+    description: 'Voiced alveolar plosive.',
+    chineseTip: '【像拼音 d】舌尖抵住上齿龈爆破。浊辅音。',
+    commonSpellings: ['d', 'dd', 'ed'],
+    examples: [
+      { word: 'dog', transcription: '/dɒg/' },
+      { word: 'dad', transcription: '/dæd/' },
+      { word: 'bed', transcription: '/bed/' }
+    ],
+    sentence: 'Dad dances daily.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+  {
+    symbol: 'g',
+    ph: 'g',
+    filename: 'g',
+    name: 'g',
+    section: 'Consonants',
+    category: 'Plosives',
+    voicing: 'Voiced',
+    exampleWord: 'go',
+    sound: 'guh',
+    description: 'Voiced velar plosive.',
+    chineseTip: '【像拼音 g】舌后部抵住软腭。浊辅音。',
+    commonSpellings: ['g', 'gg', 'gh'],
+    examples: [
+      { word: 'go', transcription: '/gəʊ/' },
+      { word: 'get', transcription: '/get/' },
+      { word: 'bag', transcription: '/bæg/' }
+    ],
+    sentence: 'Go get the game.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+  {
+    symbol: 'v',
+    ph: 'v',
+    filename: 'v',
+    name: 'v',
+    section: 'Consonants',
+    category: 'Fricatives',
+    voicing: 'Voiced',
+    isDifficult: true,
+    exampleWord: 'van',
+    sound: 'vvv',
+    description: 'Voiced labiodental fricative.',
+    chineseTip: '【易错】上齿咬下唇发音，像 f 但要振动声带。不要发成 w (我)！',
+    commonSpellings: ['v', 'f'],
+    examples: [
+      { word: 'van', transcription: '/væn/' },
+      { word: 'very', transcription: '/ˈveri/' },
+      { word: 'five', transcription: '/faɪv/' }
+    ],
+    sentence: 'Very vivid violet van.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+  {
+    symbol: 'z',
+    ph: 'z',
+    filename: 'z',
+    name: 'z',
+    section: 'Consonants',
+    category: 'Fricatives',
+    voicing: 'Voiced',
+    exampleWord: 'zoo',
+    sound: 'zzz',
+    description: 'Voiced alveolar fricative.',
+    chineseTip: '【像拼音 z】蜜蜂飞行的声音“嗡”。浊辅音。',
+    commonSpellings: ['z', 'zz', 's'],
+    examples: [
+      { word: 'zoo', transcription: '/zuː/' },
+      { word: 'zebra', transcription: '/ˈzebrə/' },
+      { word: 'nose', transcription: '/nəʊz/' }
+    ],
+    sentence: 'Zebras zigzag in the zoo.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+  {
     symbol: 'ð',
     ph: 'ð',
     filename: 'th-voiced',
@@ -726,28 +807,6 @@ export const IPA_DATA: IPASymbol[] = [
       { word: 'mother', transcription: '/ˈmʌðə/' }
     ],
     sentence: 'This is my mother.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-  {
-    symbol: 'ʃ',
-    ph: 'ʃ',
-    filename: 'sh',
-    name: 'esh',
-    section: 'Consonants',
-    category: 'Fricatives',
-    voicing: 'Voiceless',
-    exampleWord: 'she',
-    sound: 'shh',
-    description: 'Voiceless postalveolar fricative.',
-    chineseTip: '【卷舌音】让别人安静时发的“嘘”。符号像拉长的 S (Silence)。',
-    commonSpellings: ['sh', 'ch', 'ti', 'ss', 'ci'],
-    examples: [
-      { word: 'she', transcription: '/ʃiː/' },
-      { word: 'shop', transcription: '/ʃɒp/' },
-      { word: 'fish', transcription: '/fɪʃ/' }
-    ],
-    sentence: 'She sells sea shells.',
     youtubeId: SHARED_VIDEO_ID,
     videoStartTime: 0
   },
@@ -775,77 +834,8 @@ export const IPA_DATA: IPASymbol[] = [
     videoStartTime: 0
   },
   {
-    symbol: 'h',
-    ph: 'h',
-    filename: 'h',
-    name: 'h',
-    section: 'Consonants',
-    category: 'Fricatives',
-    voicing: 'Voiceless',
-    exampleWord: 'hat',
-    sound: 'hhh',
-    description: 'Voiceless glottal fricative.',
-    chineseTip: '【像拼音 h】像是哈气或呵气，气流不受阻碍。',
-    commonSpellings: ['h', 'wh'],
-    examples: [
-      { word: 'hat', transcription: '/hæt/' },
-      { word: 'home', transcription: '/həʊm/' },
-      { word: 'hello', transcription: '/həˈləʊ/' }
-    ],
-    sentence: 'Harry has a happy home.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-  {
-    symbol: 'r',
-    ph: 'ɹ',
-    filename: 'r',
-    name: 'r',
-    section: 'Consonants',
-    category: 'Approximants',
-    voicing: 'Voiced',
-    isDifficult: true,
-    exampleWord: 'red',
-    sound: 'rrr',
-    description: 'Alveolar approximant.',
-    chineseTip: '【难点】舌尖向上卷起，但不要接触上膛！千万不要发成拼音 r (日) 的摩擦音。',
-    commonSpellings: ['r', 'rr', 'wr'],
-    examples: [
-      { word: 'red', transcription: '/red/' },
-      { word: 'run', transcription: '/rʌn/' },
-      { word: 'carrot', transcription: '/ˈkærət/' }
-    ],
-    sentence: 'Run round the road.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-
-  // --- Affricates ---
-  {
-    symbol: 'tʃ',
-    ph: 'ʧ',
-    filename: 'ch',
-    name: 'ch',
-    section: 'Consonants',
-    category: 'Affricates',
-    voicing: 'Voiceless',
-    exampleWord: 'chair',
-    sound: 'ch',
-    description: 'Voiceless postalveolar affricate.',
-    chineseTip: '【像汉字“吃”】但双唇要收圆向前翘起。清辅音。',
-    commonSpellings: ['ch', 'tch', 't'],
-    examples: [
-      { word: 'chair', transcription: '/tʃeə/' },
-      { word: 'cheese', transcription: '/tʃiːz/' },
-      { word: 'watch', transcription: '/wɒtʃ/' }
-    ],
-    sentence: 'Check the watch.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-  {
     symbol: 'dʒ',
-    ph: 'ʤ',
+    ph: 'dʒ',
     filename: 'dj',
     name: 'j',
     section: 'Consonants',
@@ -862,28 +852,6 @@ export const IPA_DATA: IPASymbol[] = [
       { word: 'bridge', transcription: '/brɪdʒ/' }
     ],
     sentence: 'Judge the ginger jam.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-  {
-    symbol: 'tr',
-    ph: 'tr',
-    filename: 'tr',
-    name: 'tr',
-    section: 'Consonants',
-    category: 'Affricates',
-    voicing: 'Voiceless',
-    exampleWord: 'tree',
-    sound: 'truh',
-    description: 'Voiceless retroflex affricate sound.',
-    chineseTip: '【像汉字“戳”】双唇收圆，舌尖抵住上齿龈后部再放开。',
-    commonSpellings: ['tr'],
-    examples: [
-      { word: 'tree', transcription: '/triː/' },
-      { word: 'try', transcription: '/traɪ/' },
-      { word: 'train', transcription: '/treɪn/' }
-    ],
-    sentence: 'Try to train for the trip.',
     youtubeId: SHARED_VIDEO_ID,
     videoStartTime: 0
   },
@@ -910,28 +878,6 @@ export const IPA_DATA: IPASymbol[] = [
     videoStartTime: 0
   },
   {
-    symbol: 'ts',
-    ph: 'ts',
-    filename: 'ts',
-    name: 'ts',
-    section: 'Consonants',
-    category: 'Affricates',
-    voicing: 'Voiceless',
-    exampleWord: 'cats',
-    sound: 'ts',
-    description: 'Voiceless alveolar affricate.',
-    chineseTip: '【像汉字“次”】舌尖抵住上齿龈，气流爆破摩擦而出。',
-    commonSpellings: ['ts'],
-    examples: [
-      { word: 'cats', transcription: '/kæts/' },
-      { word: 'hats', transcription: '/hæts/' },
-      { word: 'let\'s', transcription: '/lets/' }
-    ],
-    sentence: 'The cats need hats.',
-    youtubeId: SHARED_VIDEO_ID,
-    videoStartTime: 0
-  },
-  {
     symbol: 'dz',
     ph: 'dz',
     filename: 'dz',
@@ -954,7 +900,29 @@ export const IPA_DATA: IPASymbol[] = [
     videoStartTime: 0
   },
 
-  // --- Nasals ---
+  // ==================== OTHER CONSONANTS (8) ====================
+  {
+    symbol: 'h',
+    ph: 'h',
+    filename: 'h',
+    name: 'h',
+    section: 'Consonants',
+    category: 'Fricatives',
+    voicing: 'Voiceless',
+    exampleWord: 'hat',
+    sound: 'hhh',
+    description: 'Voiceless glottal fricative.',
+    chineseTip: '【像拼音 h】像是哈气或呵气，气流不受阻碍。',
+    commonSpellings: ['h', 'wh'],
+    examples: [
+      { word: 'hat', transcription: '/hæt/' },
+      { word: 'home', transcription: '/həʊm/' },
+      { word: 'hello', transcription: '/həˈləʊ/' }
+    ],
+    sentence: 'Harry has a happy home.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
   {
     symbol: 'm',
     ph: 'm',
@@ -1021,8 +989,6 @@ export const IPA_DATA: IPASymbol[] = [
     youtubeId: SHARED_VIDEO_ID,
     videoStartTime: 0
   },
-
-  // --- Approximants (Semivowels/Liquids) ---
   {
     symbol: 'l',
     ph: 'l',
@@ -1042,6 +1008,29 @@ export const IPA_DATA: IPASymbol[] = [
       { word: 'ball', transcription: '/bɔːl/' }
     ],
     sentence: 'Lily likes lemons.',
+    youtubeId: SHARED_VIDEO_ID,
+    videoStartTime: 0
+  },
+  {
+    symbol: 'r',
+    ph: 'r',
+    filename: 'r',
+    name: 'r',
+    section: 'Consonants',
+    category: 'Approximants',
+    voicing: 'Voiced',
+    isDifficult: true,
+    exampleWord: 'red',
+    sound: 'rrr',
+    description: 'Alveolar approximant.',
+    chineseTip: '【难点】舌尖向上卷起，但不要接触上膛！千万不要发成拼音 r (日) 的摩擦音。',
+    commonSpellings: ['r', 'rr', 'wr'],
+    examples: [
+      { word: 'red', transcription: '/red/' },
+      { word: 'run', transcription: '/rʌn/' },
+      { word: 'carrot', transcription: '/ˈkærət/' }
+    ],
+    sentence: 'Run round the road.',
     youtubeId: SHARED_VIDEO_ID,
     videoStartTime: 0
   },
@@ -1088,5 +1077,5 @@ export const IPA_DATA: IPASymbol[] = [
     sentence: 'You are young.',
     youtubeId: SHARED_VIDEO_ID,
     videoStartTime: 0
-  }
+  },
 ];

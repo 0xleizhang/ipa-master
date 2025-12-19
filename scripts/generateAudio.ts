@@ -19,7 +19,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // 加载 .env 文件 (先检查 scripts/.env，再检查项目根目录)
-const envPath = fs.existsSync(path.join(__dirname, '.env')) 
+const envPath = fs.existsSync(path.join(__dirname, '.env'))
   ? path.join(__dirname, '.env')
   : path.join(__dirname, '..', '.env');
 dotenv.config({ path: envPath });
@@ -94,17 +94,17 @@ async function generateAudioForSymbol(
       const audioBase64 = part.inlineData.data;
       let audioBuffer = Buffer.from(audioBase64, 'base64');
       const mimeType = part.inlineData.mimeType || 'unknown';
-      
+
       console.log(`    MIME type: ${mimeType}`);
-      
+
       let ext = 'wav'; // default to wav
-      
+
       // Check if it's raw PCM audio (L16 format)
       if (mimeType.includes('L16') || mimeType.includes('pcm')) {
         // Extract sample rate from MIME type (e.g., "audio/L16;codec=pcm;rate=24000")
         const rateMatch = mimeType.match(/rate=(\d+)/);
         const sampleRate = rateMatch ? parseInt(rateMatch[1], 10) : 24000;
-        
+
         // Add WAV header to make it playable
         const wavHeader = createWavHeader(audioBuffer.length, sampleRate);
         audioBuffer = Buffer.concat([wavHeader, audioBuffer]);
@@ -125,7 +125,7 @@ async function generateAudioForSymbol(
         else if (header.startsWith('fff') || header.startsWith('494433')) ext = 'mp3';
         else if (header.startsWith('1a45dfa3')) ext = 'webm';
       }
-      
+
       const filepath = path.join(outputDir, `${filename}.${ext}`);
       fs.writeFileSync(filepath, audioBuffer);
       return ext;
@@ -143,7 +143,7 @@ async function main() {
   const apiKey = process.env.GEMINI_API_KEY;
   const limit = parseInt(process.env.LIMIT || '0', 10); // 0 表示不限制
   const forceRegenerate = process.argv.includes('--force');
-  
+
   if (!apiKey) {
     console.error('Error: GEMINI_API_KEY not found in .env file');
     console.log('Please create a .env file in the project root with:');
@@ -151,16 +151,16 @@ async function main() {
     process.exit(1);
   }
 
-  // Create audio directory
-  const mp3Dir = path.join(__dirname, 'mp3'); // Keep folder name for compatibility
+  // Create audio directory in public folder
+  const mp3Dir = path.join(__dirname, '..', 'public', 'mp3');
   if (!fs.existsSync(mp3Dir)) {
     fs.mkdirSync(mp3Dir, { recursive: true });
   }
 
   const ai = new GoogleGenAI({ apiKey });
-  
+
   const symbolsToProcess = limit > 0 ? IPA_DATA.slice(0, limit) : IPA_DATA;
-  
+
   console.log(`Starting audio generation for ${symbolsToProcess.length} IPA symbols...`);
   if (limit > 0) {
     console.log(`(Limited to first ${limit} symbols for testing)`);
@@ -179,7 +179,7 @@ async function main() {
 
   for (let i = 0; i < symbolsToProcess.length; i++) {
     const { symbol, ph, filename, exampleWord } = symbolsToProcess[i];
-    
+
     // Check if file already exists
     const existingFile = fs.readdirSync(mp3Dir).find(f => f.startsWith(filename + '.'));
     if (existingFile && !forceRegenerate) {
@@ -187,11 +187,11 @@ async function main() {
       console.log(`[${i + 1}/${symbolsToProcess.length}] Skipping /${symbol}/ - ${existingFile} already exists`);
       continue;
     }
-    
+
     console.log(`[${i + 1}/${symbolsToProcess.length}] Generating audio for /${symbol}/ (${exampleWord})...`);
-    
+
     const ext = await generateAudioForSymbol(ai, ph, symbol, exampleWord, filename, mp3Dir);
-    
+
     if (ext) {
       successCount++;
       console.log(`  ✓ Success - saved as ${filename}.${ext}`);
@@ -199,7 +199,7 @@ async function main() {
       failCount++;
       console.log(`  ✗ Failed`);
     }
-    
+
     // Add a small delay to avoid rate limiting
     await new Promise(resolve => setTimeout(resolve, 500));
   }
