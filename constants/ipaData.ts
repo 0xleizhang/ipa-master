@@ -1,4 +1,4 @@
-import { IPASymbol } from './types';
+import { IPASymbol } from '../types';
 
 // The full 48 IPA symbols commonly used in English teaching (especially in Asia).
 // Using shared video resource: https://www.youtube.com/watch?v=Sw36F_UcIn8
@@ -11,6 +11,8 @@ export const IPA_DATA: IPASymbol[] = [
   // --- Monophthongs (Long) ---
   {
     symbol: 'i:',
+    ph: 'iː',
+    filename: 'i-long',
     name: 'Long i',
     section: 'Vowels',
     category: 'Monophthongs (Long)',
@@ -31,6 +33,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ɑ:',
+    ph: 'ɑː',
+    filename: 'a-long',
     name: 'Long a',
     section: 'Vowels',
     category: 'Monophthongs (Long)',
@@ -51,6 +55,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ɔ:',
+    ph: 'ɔː',
+    filename: 'c-long',
     name: 'Long o',
     section: 'Vowels',
     category: 'Monophthongs (Long)',
@@ -71,6 +77,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'u:',
+    ph: 'uː',
+    filename: 'u-long',
     name: 'Long u',
     section: 'Vowels',
     category: 'Monophthongs (Long)',
@@ -91,6 +99,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ɜ:',
+    ph: 'ɜː',
+    filename: 'er-long',
     name: 'Long er',
     section: 'Vowels',
     category: 'Monophthongs (Long)',
@@ -114,6 +124,8 @@ export const IPA_DATA: IPASymbol[] = [
   // --- Monophthongs (Short) ---
   {
     symbol: 'ɪ',
+    ph: 'ɪ',
+    filename: 'i-short',
     name: 'Short i',
     section: 'Vowels',
     category: 'Monophthongs (Short)',
@@ -135,6 +147,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'e',
+    ph: 'ɛ',
+    filename: 'e',
     name: 'Short e',
     section: 'Vowels',
     category: 'Monophthongs (Short)',
@@ -155,6 +169,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'æ',
+    ph: 'æ',
+    filename: 'ae',
     name: 'Short a',
     section: 'Vowels',
     category: 'Monophthongs (Short)',
@@ -176,6 +192,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ʌ',
+    ph: 'ʌ',
+    filename: 'wedge',
     name: 'Short u',
     section: 'Vowels',
     category: 'Monophthongs (Short)',
@@ -196,6 +214,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ɒ',
+    ph: 'ɒ',
+    filename: 'o-short',
     name: 'Short o',
     section: 'Vowels',
     category: 'Monophthongs (Short)',
@@ -216,6 +236,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ʊ',
+    ph: 'ʊ',
+    filename: 'u-short',
     name: 'Short oo',
     section: 'Vowels',
     category: 'Monophthongs (Short)',
@@ -236,6 +258,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ə',
+    ph: 'ə',
+    filename: 'schwa',
     name: 'Schwa',
     section: 'Vowels',
     category: 'Monophthongs (Short)',
@@ -258,6 +282,8 @@ export const IPA_DATA: IPASymbol[] = [
   // --- Diphthongs ---
   {
     symbol: 'eɪ',
+    ph: 'eɪ',
+    filename: 'ei',
     name: 'ei',
     section: 'Diphthongs',
     category: 'Diphthongs',
@@ -278,6 +304,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'aɪ',
+    ph: 'aɪ',
+    filename: 'ai',
     name: 'ai',
     section: 'Diphthongs',
     category: 'Diphthongs',
@@ -298,6 +326,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ɔɪ',
+    ph: 'ɔɪ',
+    filename: 'oi',
     name: 'oi',
     section: 'Diphthongs',
     category: 'Diphthongs',
@@ -318,6 +348,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'əʊ',
+    ph: 'əʊ',
+    filename: 'ou',
     name: 'ou',
     section: 'Diphthongs',
     category: 'Diphthongs',
@@ -338,6 +370,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'aʊ',
+    ph: 'aʊ',
+    filename: 'au',
     name: 'au',
     section: 'Diphthongs',
     category: 'Diphthongs',
@@ -358,6 +392,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ɪə',
+    ph: 'ɪə',
+    filename: 'ia',
     name: 'ear',
     section: 'Diphthongs',
     category: 'Diphthongs',
@@ -378,6 +414,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'eə',
+    ph: 'eə',
+    filename: 'ea',
     name: 'air',
     section: 'Diphthongs',
     category: 'Diphthongs',
@@ -398,6 +436,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ʊə',
+    ph: 'ʊə',
+    filename: 'ua',
     name: 'ure',
     section: 'Diphthongs',
     category: 'Diphthongs',
@@ -422,6 +462,8 @@ export const IPA_DATA: IPASymbol[] = [
   // --- Plosives ---
   {
     symbol: 'p',
+    ph: 'p',
+    filename: 'p',
     name: 'p',
     section: 'Consonants',
     category: 'Plosives',
@@ -442,6 +484,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'b',
+    ph: 'b',
+    filename: 'b',
     name: 'b',
     section: 'Consonants',
     category: 'Plosives',
@@ -462,6 +506,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 't',
+    ph: 't',
+    filename: 't',
     name: 't',
     section: 'Consonants',
     category: 'Plosives',
@@ -482,6 +528,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'd',
+    ph: 'd',
+    filename: 'd',
     name: 'd',
     section: 'Consonants',
     category: 'Plosives',
@@ -502,6 +550,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'k',
+    ph: 'k',
+    filename: 'k',
     name: 'k',
     section: 'Consonants',
     category: 'Plosives',
@@ -522,6 +572,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'g',
+    ph: 'g',
+    filename: 'g',
     name: 'g',
     section: 'Consonants',
     category: 'Plosives',
@@ -544,6 +596,8 @@ export const IPA_DATA: IPASymbol[] = [
   // --- Fricatives ---
   {
     symbol: 'f',
+    ph: 'f',
+    filename: 'f',
     name: 'f',
     section: 'Consonants',
     category: 'Fricatives',
@@ -564,6 +618,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'v',
+    ph: 'v',
+    filename: 'v',
     name: 'v',
     section: 'Consonants',
     category: 'Fricatives',
@@ -585,6 +641,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 's',
+    ph: 's',
+    filename: 's',
     name: 's',
     section: 'Consonants',
     category: 'Fricatives',
@@ -605,6 +663,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'z',
+    ph: 'z',
+    filename: 'z',
     name: 'z',
     section: 'Consonants',
     category: 'Fricatives',
@@ -625,6 +685,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'θ',
+    ph: 'θ',
+    filename: 'th-voiceless',
     name: 'theta',
     section: 'Consonants',
     category: 'Fricatives',
@@ -646,6 +708,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ð',
+    ph: 'ð',
+    filename: 'th-voiced',
     name: 'eth',
     section: 'Consonants',
     category: 'Fricatives',
@@ -667,6 +731,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ʃ',
+    ph: 'ʃ',
+    filename: 'sh',
     name: 'esh',
     section: 'Consonants',
     category: 'Fricatives',
@@ -687,6 +753,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ʒ',
+    ph: 'ʒ',
+    filename: 'zh',
     name: 'yogh',
     section: 'Consonants',
     category: 'Fricatives',
@@ -708,6 +776,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'h',
+    ph: 'h',
+    filename: 'h',
     name: 'h',
     section: 'Consonants',
     category: 'Fricatives',
@@ -728,6 +798,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'r',
+    ph: 'ɹ',
+    filename: 'r',
     name: 'r',
     section: 'Consonants',
     category: 'Approximants',
@@ -751,6 +823,8 @@ export const IPA_DATA: IPASymbol[] = [
   // --- Affricates ---
   {
     symbol: 'tʃ',
+    ph: 'ʧ',
+    filename: 'ch',
     name: 'ch',
     section: 'Consonants',
     category: 'Affricates',
@@ -771,6 +845,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'dʒ',
+    ph: 'ʤ',
+    filename: 'dj',
     name: 'j',
     section: 'Consonants',
     category: 'Affricates',
@@ -791,6 +867,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'tr',
+    ph: 'tr',
+    filename: 'tr',
     name: 'tr',
     section: 'Consonants',
     category: 'Affricates',
@@ -811,6 +889,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'dr',
+    ph: 'dr',
+    filename: 'dr',
     name: 'dr',
     section: 'Consonants',
     category: 'Affricates',
@@ -831,6 +911,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ts',
+    ph: 'ts',
+    filename: 'ts',
     name: 'ts',
     section: 'Consonants',
     category: 'Affricates',
@@ -851,6 +933,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'dz',
+    ph: 'dz',
+    filename: 'dz',
     name: 'dz',
     section: 'Consonants',
     category: 'Affricates',
@@ -873,6 +957,8 @@ export const IPA_DATA: IPASymbol[] = [
   // --- Nasals ---
   {
     symbol: 'm',
+    ph: 'm',
+    filename: 'm',
     name: 'm',
     section: 'Consonants',
     category: 'Nasals',
@@ -893,6 +979,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'n',
+    ph: 'n',
+    filename: 'n',
     name: 'n',
     section: 'Consonants',
     category: 'Nasals',
@@ -913,6 +1001,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'ŋ',
+    ph: 'ŋ',
+    filename: 'ng',
     name: 'ng',
     section: 'Consonants',
     category: 'Nasals',
@@ -935,6 +1025,8 @@ export const IPA_DATA: IPASymbol[] = [
   // --- Approximants (Semivowels/Liquids) ---
   {
     symbol: 'l',
+    ph: 'l',
+    filename: 'l',
     name: 'l',
     section: 'Consonants',
     category: 'Approximants',
@@ -955,6 +1047,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'w',
+    ph: 'w',
+    filename: 'w',
     name: 'w',
     section: 'Consonants',
     category: 'Approximants',
@@ -975,6 +1069,8 @@ export const IPA_DATA: IPASymbol[] = [
   },
   {
     symbol: 'j',
+    ph: 'j',
+    filename: 'j',
     name: 'y',
     section: 'Consonants',
     category: 'Approximants',

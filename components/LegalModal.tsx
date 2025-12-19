@@ -1,6 +1,6 @@
 import React from 'react';
 import { X, Shield, FileText } from 'lucide-react';
-import { PRIVACY_POLICY, TERMS_OF_SERVICE } from '../data/legalContent';
+import { PRIVACY_POLICY, TERMS_OF_SERVICE } from '../services/legalContent';
 
 interface LegalModalProps {
   page: 'privacy' | 'terms';

@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Mic2, Info, Github, Settings, LayoutGrid, List } from 'lucide-react';
-import { IPA_DATA } from './constants';
+import { IPA_DATA } from './constants/ipaData';
 import { IPASymbol, IPASection } from './types';
 import IPAGrid from './components/IPAGrid';
 import IPATable from './components/IPATable';
 import IPADetail from './components/IPADetail';
 import SettingsModal from './components/SettingsModal';
 import LegalModal from './components/LegalModal';
+
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState<IPASection>('Vowels');
@@ -25,9 +26,40 @@ const App: React.FC = () => {
     }
   }, []);
 
-  // Simple text-to-speech helper
+  // 查找 IPA 符号数据
+  const findSymbolData = (word: string): IPASymbol | undefined => {
+    return IPA_DATA.find(s => s.sound === word || s.exampleWord === word);
+  };
+
+  // Play audio using filename from IPA_DATA
   const playAudio = (e: React.MouseEvent | React.TouchEvent, word: string) => {
     e.stopPropagation();
+    
+    // Find the corresponding IPA symbol data
+    const symbolData = findSymbolData(word);
+    
+    // If found and has filename, play the local MP3
+    if (symbolData?.filename) {
+      try {
+        const audioPath = `/mp3/${symbolData.filename}.mp3`;
+        const audio = new Audio(audioPath);
+        const playPromise = audio.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {
+            // Fallback to browser TTS on error
+            const utterance = new SpeechSynthesisUtterance(word);
+            utterance.lang = 'en-GB';
+            utterance.rate = 0.9;
+            window.speechSynthesis.speak(utterance);
+          });
+        }
+        return;
+      } catch {
+        // Fallback on exception
+      }
+    }
+    
+    // Fallback to browser TTS
     const utterance = new SpeechSynthesisUtterance(word);
     utterance.lang = 'en-GB'; 
     utterance.rate = 0.9;

@@ -4,6 +4,8 @@ export type IPAVoicing = 'Voiced' | 'Voiceless';
 
 export interface IPASymbol {
   symbol: string;
+  ph: string; // IPA phoneme for Google TTS API (may differ from symbol)
+  filename: string; // Safe filename for audio files
   name: string;
   section: IPASection;
   category: IPACategory;
